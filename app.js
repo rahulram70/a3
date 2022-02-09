@@ -31,5 +31,5 @@ var rects = svg.append("rect")
                 .attr("height", 500)
                 .attr("width", 500)
                 .style("stroke", "black")
-                .style("fill", "#3e4446")
+                .style("fill", "#404040")
                 .style("stroke-width", 2);
