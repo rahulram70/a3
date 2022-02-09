@@ -4,7 +4,7 @@ const height = 600;
 const svg = d3.select('svg');
 
 const projection = d3.geoMercator()
-  .center([ 0, 55 ])
+  .center([ 25, 45 ])
   .scale(625)
   .translate([ width / 2, height / 2]);
 
@@ -24,3 +24,12 @@ d3.json('https://raw.githubusercontent.com/rahulram70/a3/main/europe-topo-subset
         .attr('d', pathGenerator)
 
     });
+
+var rects = svg.append("rect")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("height", 500)
+                .attr("width", 500)
+                .style("stroke", "black")
+                .style("fill", "#3e4446")
+                .style("stroke-width", 2);
