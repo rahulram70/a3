@@ -1,7 +1,7 @@
 {
 	"type": "Topology",
 	"objects": {
-		"conseils-quartiers": {
+		"conseils": {
 			"type": "GeometryCollection",
 			"geometries": [{
 				"type": "Polygon",
