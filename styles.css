@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+  }
+  
+  .country {
+    fill: black;
+    stroke: white;
+    stroke-opacity: 0.5;
+  }
+  
+  .country:hover {
+    fill: red;
+  }

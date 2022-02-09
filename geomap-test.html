@@ -15,7 +15,7 @@
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
     <script>
-        var myGeoJSONPath = 'https://raw.githubusercontent.com/rahulram70/a3/main/western-europe-geo.json';
+        var myGeoJSONPath = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
         var myCustomStyle = {
             stroke: false,
             fill: true,
@@ -33,7 +33,11 @@
 
             L.geoJson(data, {
                 clickable: false,
-                style: myCustomStyle
+                style: myCustomStyle,
+                color: 'green',
+                weight: 14,
+                opacity: 1,
+                fillOpacity: 0.0
             }).addTo(map);
         })
     </script>
