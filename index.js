@@ -28,7 +28,7 @@ var map = new google.maps.Map(d3.select('#map').node(), {
   /* d3.json("hotels.json", function(error, data) {
       if (error) throw error;*/
   console.log("outside d3 json")
-  d3.json("hotels.json", function(error, data) {
+  d3.json("https://raw.githubusercontent.com/rahulram70/a3/main/hotel-data/hotels.json", function(error, data) {
     //console.log(error)
     if (error) throw error;
     //console.log("inside d3 json")
