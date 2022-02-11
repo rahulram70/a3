@@ -18,11 +18,22 @@
   }
 });*/
 
+const WESTERN_EUROPE_BOUNDS = {
+    north: 55.00,
+    south: 35.00,
+    west: -12.00,
+    east: 13.00
+}
+
 // Create the map & fit any bounds
 var map = new google.maps.Map(d3.select('#map').node(), {
     zoom: 4,
-    center: new google.maps.LatLng(51.5072, 0.1276),
+    center: new google.maps.LatLng(47.313668, 10.261293),
     mapTypeId: google.maps.MapTypeId.STREET,
+    restriction: {
+        latLngBounds: WESTERN_EUROPE_BOUNDS,
+        strictBounds: false
+    }
   });
   
   /* d3.json("hotels.json", function(error, data) {
